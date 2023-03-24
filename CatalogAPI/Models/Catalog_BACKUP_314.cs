@@ -1,11 +1,11 @@
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace CatalogAPI.Models
 {
-     //user 3 modifying the code
+     //user 2 modifying the code
      //add sub catelog name
 
     [Table("Catalog")]
@@ -13,9 +13,11 @@ namespace CatalogAPI.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required]
-        [Required] //user2
+<<<<<<< HEAD
         [Required] //user3
+=======
+        [Required] //user2
+>>>>>>> eec25f5aeb783df65a299752561c921a2a5a02c4
         [Column("Catalog_Id")]
         public long CatalogId { get; set; }
         [Column("Catalog_Name")]
